@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+<head>
+    <style type="text/css">
+        h1{
+          color: blueviolet;
+        }
+        h5{
+           border-style: dotted;
+            padding-top: 25px;
+            padding-left: 25px;
+            padding-bottom: 25px;
+            color: black;
+            background-color: aqua;
+            letter-spacing: 25px;
+            word-spacing: 25px;
+            font-size: 23px;
+        }
+            h4{
+                color: #008800;
+                text-align:center;
+                letter-spacing: 15px;
+                line-height: 0.3;
+                text-align: justify;
+            }
+            
+            body{
+                background-color: darkgreen;
+            }
+            h3{
+                    color: #008800;
+                    text-align: right;
+                border-style: dotted;
+                border-width: 0.3px;
+                border-color: yellow;
+                border-left: #008800;
+                border-bottom: orangered;
+                border-right: gold;
+                padding:80px; 
+
+            }
+            p{
+                text-align: justify;
+            }
+            a:link{
+                color: black;
+            }
+            a:hover{
+                color: #008800;
+            }
+
+            a:active{
+                color: aquamarine;
+            }
+
+            a:visited{
+                color: brown;
+            }
+            tr{
+                background-color: yellow;
+
+            }
+            th{
+                color:gold;
+                border: 2px solid;
+            }
+            td{
+                border: 2px solid green;
+            }
+            table{
+                border: #000 solid;
+            }
+            span{
+                font-size: 35px;
+                color: darkred;
+            }
+            .relpos{
+                position: relative;
+                top: 150px;
+                left: 150px;
+                bottom: 150px;
+                right: 150px;
+            }
+
+       #zunu1{
+        background-color: green;
+       }
+
+    </style>
+    <link rel= "stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h5><span>strong</span></h5>
+    <p class="relpos">huaaain</p>
+ <del><h1><u>my new projact</u></h1></del>
+<p>qwertyuopasdfghjklxcvbnm</p>
+<h1><a herf="file:///home/pc/Desktop/frontend/W3School/index.html">hussain khan</a></h1>
+<form action="./index.html">
+    UserName:<input type="text"  name="uname" maxlength="6" id="zunu1"> <br/>
+    password:<input type="password" name="upass" maxlength="8"/> <br/>
+    Gender:<input type="checkbox" name="Gender" value="male" checked/>male
+            <input type="checkbox" name="Gender" value="female"/>female<br/>
+    course:<input type="checkbox" name="course" value="html" checked/>html
+            <input type="checkbox" name="course" value="css"/>css<br/>
+    age group:<select  name="age">
+        <option>10-20</option>
+        <option>20-30</option>
+        <option>30-40</option>
+        <option>40-50</option>
+        <option>50-60</option>
+    </select><br/>
+    comment:<textarea name="comment"rows="3" cols="10"></textarea><br>
+    <input type="submit" value="submit"/>
+    <input type="reset" value="reset">
+    <input type="button" value="click me" id="hussain1"/>
+</form>
+ <ul>
+<li>B.P.L</li>
+    <ol>
+        <li>bakari</li>
+        <li>premium</li>
+        <li>legend</li>
+    </ol>
+<li>S.H.L.</li>
+    <ol>
+        <li>shanwaz</li>
+        <li>hussain</li>
+        <li>lukman</li>
+    </ol>  
+ </ul>
+<table >
+<tr>
+    <th>name</th>
+    <th>qulification</th>
+</tr>
+<tr>
+    <td>post office</td>
+    <td>10th/12th/iti</td>
+</tr>
+<tr>
+    <td>manager</td>
+    <td>only iti</td>
+ </tr>
+<tr>
+    <td>welder</td>
+    <td>10th/under</td>
+</tr>
+</table>
+<p>hussain</p>
+<a href="./css/style.css">friends</a>
+<h2><b>important note point</b></h2>
+<ol type="I">
+<li>ptarkar</li>
+<li>bhart</li>
+<li>hindustan</li>
+</ol>
+
+<p>gdukfaeglfaewfigei</p>
+
+<h2>stole list</h2>
+<ul>
+    <li>tea</li>
+    <li>coffe</li>
+    <li>cold coffe  </li>
+</ul>
+
+<input type="button" id="button" value="button">
+<br>
+<div id="form">
+<div id="center-element">
+<div class="format">
+<b>UserName</b> : <input type="text" id="element" name="text" placeholder="---Enter Your Name---" maxlength="20"> <br>
+<div id="selector"></div>
+<form action="">
+<b>Password</b> : <input type="password" id="element2"name="password" placeholder="---Password---" maxlength="15"><br>
+<p>Password Must be in 1 lowercase & 1 uppercase.</p>
+<b>Email</b> : <input type="email" id="element3"name="email" placeholder="---Email---"><br>
+<b class="size">Date Of Birth</b> : <input type="date" name="date" value="Date" id="Date"> 
+</div>
+<input type="button" value="Submit" id="submit-button">
+</form>
+</div>
+</div>
+<script>
+  document.querySelector("#element").addEventListener("focus",function () {
+   document.querySelector("#element2").addEventListener("focus",function () {
+    document.querySelector("#element3").addEventListener("focus",function () {
+        this.style.background = "#2f2f"
+    })
+    this.style.background = "#2f2f"
+   })
+    this.style.background = "#2f2f"
+
+  })
+
+  document.querySelector("#element").addEventListener("focusout",function () {
+    document.querySelector("#element2").addEventListener("focusout",function () {
+        document.querySelector("#element3").addEventListener("focusout",function () {
+            this.style.background = "none"
+        })
+        this.style.background = "none"
+    })
+    this.style.background = "none"
+  })
+
+//   document.querySelector("#submit-button").addEventListener("click",function () {
+//     alert("You're Application Has Been Submited Succesfully");
+    
+//   })
+
+  let val = 0;
+   const val2 = setInterval(function () {
+    val += 10;
+    if (val == 40) {
+        clearInterval(val2)
+    }
+    const checkval = document.querySelector("#button");
+    checkval.style.marginLeft = val + "px"
+  },1000)
+
+</script>
+
+</body>
+</html>
